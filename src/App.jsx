@@ -22,9 +22,15 @@ export default function Calculator() {
 
   return (
     <div
-      className="container d-flex justify-content-center align-items-center vh-100"
+      className="container-fluid d-flex flex-column justify-content-between align-items-center vh-100 p-0"
       style={{ background: "linear-gradient(135deg, #667eea, #764ba2)" }}
     >
+      {/* Header */}
+      <h2 className="text-white mt-3" style={{ fontWeight: "bold" }}>
+        Calculator
+      </h2>
+
+      {/* Calculator Card */}
       <div
         className="card p-3 shadow"
         style={{ maxWidth: "320px", width: "100%", borderRadius: "20px" }}
@@ -94,6 +100,13 @@ export default function Calculator() {
             </button>
           </div>
         </div>
+      </div>
+
+      {/* Footer with marquee */}
+      <div className="w-100 bg-dark text-white py-2 mt-3">
+        <marquee behavior="alternate" direction="left">
+          © 2026 Rocky04
+        </marquee>
       </div>
     </div>
   );
